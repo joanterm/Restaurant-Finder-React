@@ -7,11 +7,15 @@ class BusinessList extends React.Component {
         return(
             <div className="BusinessList">
                 <h1>business list Component and business is inside me</h1>
+                {/* <Business/>
                 <Business/>
                 <Business/>
                 <Business/>
-                <Business/>
-                <Business/>
+                <Business/> */}
+                {/* <Business business={this.props.businesses.map(business)}/> */}        
+                {this.props.businesses.map((eachBusiness) => {
+                    return <Business business={eachBusiness}/>
+                })}
             </div>
         )
     }
