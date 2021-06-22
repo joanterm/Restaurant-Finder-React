@@ -12,8 +12,8 @@ class BusinessList extends React.Component {
                 <Business/>
                 <Business/> */}
                 {/* <Business business={this.props.businesses.map(business)}/> */}        
-                {this.props.businesses.map((eachBusiness) => {
-                    return <Business business={eachBusiness}/>
+                {this.props.businesses.map((business) => {
+                    return <Business key={business.id} business={business}/>
                 })}
             </div>
         )
